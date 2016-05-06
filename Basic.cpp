@@ -61,19 +61,22 @@ namespace SK {
 				ostr << "Goodbye!!" << endl;
 				break;
 			case ADDITION:
-				ostr << "Please enter the two numbers to add" << endl;
+				ostr << "Please enter the two numbers with a space between them to add" << endl 
+					<< "For example, 52 25" << endl << endl;
 				cin >> B;
 				ostr << B.add();
 				ostr << endl << endl;
 				break;
 			case SUBTRACTION:
-				ostr << "Please enter the two numbers to subtract" << endl;
+				ostr << "Please enter the two numbers with a space between them to subtract" << endl
+					<< "For example, 52 25" << endl << endl;
 				cin >> B;
 				ostr << B.subtract();
 				ostr << endl << endl;
 				break;
 			case DIVTION:
-				ostr << "Please enter the two numbers to divide" << endl;
+				ostr << "Please enter the two numbers with a space between them to divide" << endl
+					<< "For example, 52 25" << endl << endl;
 				cin >> B;
 				ostr << endl;
 				ostr << "How many decimal places: ";
@@ -82,7 +85,8 @@ namespace SK {
 				ostr << endl << endl;
 				break;
 			case MULTIPLACTION:
-				ostr << "Please enter the two numbers to multiply" << endl;
+				ostr << "Please enter the two numbers with a space between them to multiply" << endl
+					<< "For example, 52 25" << endl << endl;
 				cin >> B;
 				ostr << B.multiply();
 				ostr << endl << endl;
