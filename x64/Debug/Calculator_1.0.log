@@ -1,4 +1,3 @@
 ﻿  Skipping... (no relevant changes detected)
   main.cpp
-Basic.obj : error LNK2019: unresolved external symbol "public: class std::basic_istream<char,struct std::char_traits<char> > & __cdecl SK::Basic::input(class std::basic_istream<char,struct std::char_traits<char> > &)" (?input@Basic@SK@@QEAAAEAV?$basic_istream@DU?$char_traits@D@std@@@std@@AEAV34@@Z) referenced in function "public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl SK::Basic::display(class std::basic_ostream<char,struct std::char_traits<char> > &)" (?display@Basic@SK@@QEAAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV34@@Z)
-D:\Seneca Backup\My Extra C++\Calucator\x64\Debug\Calculator_1.0.exe : fatal error LNK1120: 1 unresolved externals
+  Calculator_1.0.vcxproj -> D:\Seneca Backup\My Extra C++\Calucator\x64\Debug\Calculator_1.0.exe

@@ -8,36 +8,36 @@
 using namespace std;
 namespace SK {
 	Basic::Basic() {
-		numberOne = 0;
-		numberOne = 0;
+		numberOne_ = 0;
+		numberTwo_ = 0;
 	}
 	Basic::Basic(double numOne, double numTwo) {
-		numberOne = numOne;
-		numberTwo = numTwo;
+		numberOne_ = numOne;
+		numberTwo_ = numTwo;
 	}
 	double Basic::add() const {
-		return numberOne + numberTwo;
+		return numberOne_ + numberTwo_;
 	}
 	double Basic::subtract() const {
-		return numberOne - numberTwo;
+		return numberOne_ - numberTwo_;
 	}
 	double Basic::multiply() const {
-		return numberOne * numberTwo;
+		return numberOne_ * numberTwo_;
 	}
 	double Basic::divide() const {
-		return numberOne / numberTwo;
+		return numberOne_ / numberTwo_;
 	}
 	double Basic::numberOneGetter() const{
-		return numberOne;
+		return numberOne_;
 	}
 	double Basic::numberTwoGetter() const{
-		return numberTwo;
+		return numberTwo_;
 	}
 	double Basic::powerOf() const{
-		return pow(numberOne, numberTwo);
+		return pow(numberOne_, numberTwo_);
 	}
 	double Basic::squareroot() const{
-		return sqrt(numberOne);
+		return sqrt(numberOne_);
 	}
 	int Basic::menu() {
 		int selection;
@@ -60,7 +60,7 @@ namespace SK {
 		cout << endl;
 		return selection;
 	}
-	ostream& Basic::display(ostream& ostr) {
+	ostream& Basic::display(ostream& ostr){
 		int choise;
 		int decimal;
 		while ((choise = menu()) != 0) {
@@ -117,7 +117,7 @@ namespace SK {
 			case SQUAREROOT:
 				ostr << "Please enter the a number to calculate the square root" << endl
 					<< "For example, 5" << endl << endl;
-				cin >> numberOne;
+				cin >> numberOne_;
 				ostr << squareroot();
 				ostr << endl << endl;
 				break;
@@ -126,7 +126,7 @@ namespace SK {
 		return ostr;
 	}
 	std::istream & Basic::input(std::istream & istr){
-		return istr >> numberOne >> numberTwo;
+		return istr >> numberOne_ >> numberTwo_;
 	}
 	std::istream & operator>>(std::istream & istr, Basic & B){
 		return B.input(istr);

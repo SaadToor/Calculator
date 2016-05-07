@@ -5,8 +5,8 @@
 
 namespace SK {
 	class Basic {
-		double numberOne;
-		double numberTwo;
+		double numberOne_;
+		double numberTwo_;
 	public:
 		Basic();
 		Basic(double numOne, double numTwo);
