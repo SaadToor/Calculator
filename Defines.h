@@ -7,5 +7,7 @@
 #define SUBTRACTION 3
 #define DIVTION 4
 #define MULTIPLACTION 5
+#define POWER 6
+#define SQUAREROOT 7
 
 #endif

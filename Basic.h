@@ -2,12 +2,12 @@
 #ifndef SK_BASIC_H_
 #define SK_BASIC_H_
 #include <iostream>
-using namespace std;
 
 namespace SK {
 	class Basic {
 		double numberOne;
 		double numberTwo;
+		double total;
 	public:
 		Basic();
 		Basic(double numOne, double numTwo);
@@ -16,15 +16,20 @@ namespace SK {
 		double subtract() const;
 		double multiply() const;
 		double divide() const;
-		double roundUp() const;
-		double roundDown() const;
+		double powerOf() const;
+		double squareroot() const;
+
+		double numberOneGetter() const;
+		double numberTwoGetter() const;
+		double totalGetter() const;
 
 		int menu();
+		std::ostream& display(std::ostream& ostr);
 
-		istream& input(istream& istr);
+		std::istream& input(std::istream& istr);
 	};
-	istream& operator>>(istream& istr, Basic& B);
-	ostream& operator<<(ostream& ostr, Basic& B);
+	std::istream& operator>>(std::istream& istr, Basic& B);
+	std::ostream& operator<<(std::ostream& ostr, Basic& B);
 }
 
 #endif
