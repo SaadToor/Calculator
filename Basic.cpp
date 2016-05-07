@@ -29,13 +29,14 @@ namespace SK {
 		int selection;
 		cout << "Please select one of the options" << endl
 			<< "0. Exit" << endl
-			<< "1. Addition" << endl
-			<< "2. Subtraction" << endl
-			<< "3. Divition" << endl
-			<< "4. Multiplaction" << endl
+			<< "1. Set Decimal" << endl
+			<< "2. Addition" << endl
+			<< "3. Subtraction" << endl
+			<< "4. Divition" << endl
+			<< "5. Multiplaction" << endl
 			<< ">";
 		cin >> selection;
-		if (selection < 0 || selection > 4) {
+		if (selection < 0 || selection > 5) {
 			selection = -1;
 		}
 		cin.clear();
@@ -45,10 +46,10 @@ namespace SK {
 	istream& Basic::input(istream& istr) {
 		return istr >> numberOne >> numberTwo;
 	}
-	istream& operator>>(istream & istr, Basic & B) {
+	istream& operator>>(istream& istr, Basic& B) {
 		return B.input(istr);
 	}
-	ostream& operator<<(ostream & ostr, Basic & B) {
+	ostream& operator<<(ostream& ostr, Basic& B) {
 		int choise;
 		int decimal;
 		while ((choise = B.menu()) != 0) {
@@ -59,6 +60,12 @@ namespace SK {
 				break;
 			case 0:
 				ostr << "Goodbye!!" << endl;
+				break;
+			case DECIMAL:
+				ostr << "Please enter the number of decimal places needed" << endl << endl;
+				cin >> decimal;
+				ostr << fixed << setprecision(decimal);
+				ostr << endl;
 				break;
 			case ADDITION:
 				ostr << "Please enter the two numbers with a space between them to add" << endl 
@@ -79,9 +86,7 @@ namespace SK {
 					<< "For example, 52 25" << endl << endl;
 				cin >> B;
 				ostr << endl;
-				ostr << "How many decimal places: ";
-				cin >> decimal;
-				ostr << fixed << setprecision(decimal) << B.divide();
+				ostr << B.divide();
 				ostr << endl << endl;
 				break;
 			case MULTIPLACTION:

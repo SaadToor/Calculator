@@ -2,9 +2,10 @@
 #ifndef SK_DEFINES_H_
 #define SK_DEFINES_H_
 
-#define ADDITION 1
-#define SUBTRACTION 2
-#define DIVTION 3
-#define MULTIPLACTION 4
+#define DECIMAL 1
+#define ADDITION 2
+#define SUBTRACTION 3
+#define DIVTION 4
+#define MULTIPLACTION 5
 
 #endif
