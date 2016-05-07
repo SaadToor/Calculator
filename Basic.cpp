@@ -2,6 +2,7 @@
 #include "Basic.h"
 #include "Defines.h"
 #include "math.h"
+#include "ctype.h"
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -51,10 +52,11 @@ namespace SK {
 			<< "7. Square root" << endl
 			<< ">";
 		cin >> selection;
-		if (selection < 0 || selection > 7) {
+		if (selection < 0 || selection > 7 || isdigit(selection)) {
 			selection = -1;
 		}
 		cin.clear();
+		cin.ignore();
 		cout << endl;
 		return selection;
 	}
@@ -123,10 +125,10 @@ namespace SK {
 		}
 		return ostr;
 	}
-	istream& Basic::input(istream& istr) {
+	std::istream & Basic::input(std::istream & istr){
 		return istr >> numberOne >> numberTwo;
 	}
-	istream& operator>>(istream& istr, Basic& B) {
+	std::istream & operator>>(std::istream & istr, Basic & B){
 		return B.input(istr);
 	}
 	ostream& operator<<(ostream& ostr, Basic& B) {
