@@ -1,3 +1,5 @@
-﻿  Skipping... (no relevant changes detected)
-  main.cpp
+﻿  main.cpp
+  Basic.cpp
+  Generating Code...
+cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
   Calculator_1.0.vcxproj -> D:\Seneca Backup\My Extra C++\Calucator\x64\Debug\Calculator_1.0.exe

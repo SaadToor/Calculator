@@ -34,12 +34,12 @@ namespace SK {
 		return numberTwo_;
 	}
 	double Basic::powerOf() const{
-		return pow(numberOne_, numberTwo_);
+		return pow(power_, power2_);
 	}
 	double Basic::squareroot() const{
 		return sqrt(numberOne_);
 	}
-	int Basic::menu() {
+	int Basic::menu() const {
 		int selection;
 		cout << "Please select one of the options" << endl
 			<< "0. Exit" << endl
@@ -108,9 +108,10 @@ namespace SK {
 				ostr << endl << endl;
 				break;
 			case POWER:
-				ostr << "Please enter the two numbers with a space between them to calculator the power" << endl
-					<< "For example, 5 7" << endl << endl;
-				input(cin);
+				ostr << "Please enter the two numbers with a space between them to calculator the power"<< endl
+					<< "Only support up to 6 digits 000,000  10^5"
+					<< "For example, 5 6" << endl << endl;
+				cin >> power_ >> power2_;
 				ostr << powerOf();
 				ostr << endl << endl;
 				break;

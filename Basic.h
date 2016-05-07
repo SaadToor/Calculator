@@ -7,6 +7,8 @@ namespace SK {
 	class Basic {
 		double numberOne_;
 		double numberTwo_;
+		long double power_;
+		long double power2_;
 	public:
 		Basic();
 		Basic(double numOne, double numTwo);
@@ -21,7 +23,7 @@ namespace SK {
 		double numberOneGetter() const;
 		double numberTwoGetter() const;
 
-		int menu();
+		int menu() const;
 		std::ostream& display(std::ostream& ostr);
 		std::istream& input(std::istream& istr);
 	};
