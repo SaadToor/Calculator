@@ -9,7 +9,6 @@ namespace SK {
 	Basic::Basic() {
 		numberOne = 0;
 		numberOne = 0;
-		total = 0;
 	}
 	Basic::Basic(double numOne, double numTwo) {
 		numberOne = numOne;
@@ -32,9 +31,6 @@ namespace SK {
 	}
 	double Basic::numberTwoGetter() const{
 		return numberTwo;
-	}
-	double Basic::totalGetter() const{
-		return total;
 	}
 	double Basic::powerOf() const{
 		return pow(numberOne, numberTwo);

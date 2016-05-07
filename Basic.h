@@ -7,7 +7,6 @@ namespace SK {
 	class Basic {
 		double numberOne;
 		double numberTwo;
-		double total;
 	public:
 		Basic();
 		Basic(double numOne, double numTwo);
@@ -21,11 +20,9 @@ namespace SK {
 
 		double numberOneGetter() const;
 		double numberTwoGetter() const;
-		double totalGetter() const;
 
 		int menu();
 		std::ostream& display(std::ostream& ostr);
-
 		std::istream& input(std::istream& istr);
 	};
 	std::istream& operator>>(std::istream& istr, Basic& B);

@@ -33,3 +33,4 @@ Basic.h          and         Basic.cpp       and        Main.cpp
 sin
 cos
 tan
+factorial
