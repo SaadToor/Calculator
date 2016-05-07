@@ -7,4 +7,4 @@
 #define DIVTION 3
 #define MULTIPLACTION 4
 
-#endif SK_DEFINES_H_
+#endif

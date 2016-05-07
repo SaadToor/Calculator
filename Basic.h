@@ -27,4 +27,4 @@ namespace SK {
 	ostream& operator<<(ostream& ostr, Basic& B);
 }
 
-#endif SK_BASIC_H_
+#endif
